@@ -27,6 +27,9 @@ target_link_libraries(helloworld_cli
 
 #Test
 add_executable(test_version test.cpp)
+set_target_properties(test_version PROPERTIES
+	COMPILE_DEFINITIONS	BOOST_TEST_DYN_LINK
+)
 target_include_directories(test_version PUBLIC ${Boost_INCLUDE_DIR} ${Boost_INCLUDE_DIR} )
 
 target_link_libraries(test_version 
