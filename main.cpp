@@ -4,6 +4,6 @@
 
 int main()
 {
-	std::cout << "Hello, world ¹" << version() << std::endl;
+	std::cout << "Hello, world number " << version() << '!' << std::endl;
 	return 0;
 }
